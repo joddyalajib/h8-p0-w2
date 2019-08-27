@@ -1,0 +1,141 @@
+1.   
+**Algoritma**
+Diketahui :
+ΣF = resultan gaya (Newton)
+
+m = massa benda (kg)
+
+a = percepatan benda (m/s2)
+
+dimana 
+m = 600 kg
+a = 2 m/s2
+
+Ditanya :
+ΣF = ?
+
+Jawab :
+ΣF = m x a
+ΣF = 600 x 2 
+ΣF = 1200 Newton
+
+Jadi gaya Newton yang dihasilkan dari 3 orang dengan percepatan 2 m/s2 terhadap benda dengan massa 600 kg adalah 1200 Newton
+
+**Pseudocode** 
+
+START
+
+STORE m = 600
+STORE a = 2 m/s2
+
+STORE 'Newton' with CALCULATE m * a 
+
+DISPLAY 'Newton'
+
+END
+
+2. 
+**Algoritma**
+Diketahui : 
+Dalam kalender gregorian, tahun kabisat adalah yang memenuhi kriteria berikut :
+
+Jika tahun habis di bagi 4 dan tidak habis di bagi 100, atau
+Jika tahun habis di bagi 4, habis di bagi 100 dan habis di bagi 400
+
+Ditanya : 
+
+Apakah suatu tahun merupakan tahun kabisat?
+
+Jawab :
+Sebagai contoh tahun sama dengan 2019
+
+Apabila 2019 % 4 = 0, dan 2019 % 100 != 0, atau
+
+Apabila 2019 % 4 = 0, dan 2019 % 100 = 0, dan 2019 % 400 = 0, maka tahun kabisat
+
+2019 bukan tahun kabisat karena 2019 % 4 != 0
+
+**Pseudocode**
+
+START
+
+    STORE "tahun" with 2019
+
+    IF tahun MOD 4 EQUALS 0 AND tahun MOD 100 NOT EQUALS 0 OR tahun MOD 100 EQUALS 100 AND tahun MOD 400 EQUALS 400 THEN
+        DISPLAY 'tahun kabisat'
+    ELSE
+        DISPLAY 'bukan tahun kabisat'
+
+END
+
+START
+
+    STORE tahun with 2019 
+
+    IF tahun MOD 4 EQUALS 0 AND tahun MOD 100 NOT EQUALS 0 THEN 
+        DISPLAY 'tahun kabisat'
+    ELSE IF tahun MOD 100 EQUALS 0 AND tahun MOD 400 EQUALS 0 THEN
+        DISPLAY 'tahun kabisat'
+    ELSE 
+        DISPLAY 'bukan tahun kabisat'
+
+END
+
+3. 
+**Algoritma**
+
+Diketahui :
+Baju kotor = 0 
+Baju yang akan dicuci = 20
+
+Ditanya :
+Berapa banyak baju kotor yang diperlukan sehingga Foxie mulai mencuci baju?
+
+Jawab : 
+Mesin cuci akan dinyalakan jika semua pakaian Foxie sudah masuk ke mesin cuci, maka butuh 20 baju kotor hingga mulai mencuci baju
+
+**Pseudocode**
+
+START
+
+    STORE 'Baju Kotor' to 0
+    WHILE 'Baju Kotor' <= 20 
+        IF 'Baju Kotor' = 20
+            DISPLAY 'mulai mencuci baju'
+        ELSE
+            DISPLAY 'tunggu 20 baju kotor'
+        END IF
+        ADD Baju Kotor by 1
+
+END
+
+4. 
+**Algoritma**
+
+Diketahui :
+Jumlah siswa = 40
+Kuku panjang = tidak boleh dan dihukum
+Kuku pendek = boleh dan dipuji
+
+Ditanya :
+Apakah ada siswa yang berkuku panjang?
+
+Jawab :
+contoh semua siswa berkuku pendek maka semua siswa benar dan dipuji
+
+**Pseudocode**
+
+START
+
+    STORE 'murid' to 0
+    STORE 'kuku panjang' to any Boolean value
+
+    WHILE 'murid' <= 40
+        IF 'kuku panjang' EQUALS true
+            DISPLAY murid mendapat hukuman
+        ELSE
+            DISPLAY murid mendapat pujian
+        END IF
+        ADD 'murid' by 1
+
+END
